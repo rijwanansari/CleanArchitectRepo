@@ -7,3 +7,7 @@ Technologies and Architcture
 - Entity Framework
 - Repository Pattern
 - Generic Repository
+- Swagger implementation
+- Serilog with database 
+- Error Log capture
+- Code first approach
