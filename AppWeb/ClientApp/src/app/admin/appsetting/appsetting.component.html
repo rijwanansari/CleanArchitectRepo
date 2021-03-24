@@ -1,0 +1,124 @@
+<section class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1>Application Setting</h1>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a routerLink="/admin">Admin</a></li>
+          <li class="breadcrumb-item active">Application Setting</li>
+        </ol>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <form (ngSubmit)="appsettingForm.form.valid && OnSubmit()" #appsettingForm="ngForm">
+      <!-- SELECT2 EXAMPLE -->
+      <div class="card card-primary card-outline">
+        <div class="card-header">
+          <h3 class="card-title">New Application Setting</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+          </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Reference Key</label>
+                <input type="text" class="form-control" placeholder="Reference Key" [ngClass]="{ 'is-invalid': appsettingForm.submitted && referenceKey.invalid }" [(ngModel)]="appsetting.referenceKey" name="referenceKey" #referenceKey="ngModel" required>
+                <div class="text-danger" *ngIf="appsettingForm.submitted && referenceKey.invalid">
+                  <p *ngIf="referenceKey.errors?.required">Reference Key is required</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>Key Type</label>
+                <input type="text" class="form-control" placeholder="Type" [(ngModel)]="appsetting.type" name="type" #type="ngModel" [ngClass]="{ 'is-invalid': appsettingForm.submitted && type.invalid }" required>
+                <div class="text-danger" *ngIf="appsettingForm.submitted && type.invalid">
+                  <p *ngIf="type.errors?.required">Key Type is required</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Key Value</label>
+                <input type="text" class="form-control" placeholder="Key Value" [(ngModel)]="appsetting.value" name="keyvalue" #keyvalue="ngModel" [ngClass]="{ 'is-invalid': appsettingForm.submitted && keyvalue.invalid }" required>
+                <div class="text-danger" *ngIf="appsettingForm.submitted && keyvalue.invalid">
+                  <p *ngIf="keyvalue.errors?.required">Key Value is required</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Description" [(ngModel)]="appsetting.description" name="description" #description="ngModel">
+              </div>
+            </div>
+            <div class="col-sm-2">
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add New</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+
+      <div class="card card-primary">
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div class="row">
+            <table id="appsettingtable" class="table table-striped table- table-bordered">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>Reference Key</th>
+                  <th>Type</th>
+                  <th>Value</th>
+                  <th>Description</th>
+                  <th>Modified by</th>
+                  <th><i class="fa fa-cogs"></i> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let appset of appsettings">
+                  <th>
+                    <input type="checkbox" [checked]="appset.isDelete">
+                  </th>
+                  <td>{{appset.referenceKey}}</td>
+                  <td>{{appset.type}}</td>
+                  <td>{{appset.value}}</td>
+                  <td>{{appset.description}}</td>
+                  <td>{{appset.modified}}</td>
+                  <td>
+                    <a class="btn btn-success"><i class="fa fa-edit"></i> Edit</a>&nbsp;
+                    <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </td>
+                  <!--<td>
+                <a class="icon icon-edit" (click)="EditRole(role)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a class="icon icon-remove" (click)="DeleteRole(role.id)"><i class="fa fa-times" aria-hidden="true"></i></a>
+              </td>-->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer bg-gradient-green">
+          All Application Settings.
+        </div>
+      </div>
+      <!-- /.card -->
+
+    </form>
+  </div>
+</section>
+

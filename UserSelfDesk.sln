@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{E1F5DD55-E8FA-47F9-AA4B-6509EA2E2161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{ACFA04F9-775D-4BFB-BF13-637EED406A8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7FA472F4-D08C-42E9-85AB-225C41B2D07F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7049DEE0-96F2-4ECF-8061-97737FDD1593}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{933366DC-CF0B-41D9-8681-8B11FCE083BF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A1168820-FA34-40BD-AD0D-B451E4EB9C92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppWeb", "AppWeb\AppWeb.csproj", "{1CB1D477-3CA3-40BC-82F7-99B38357EFBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applcaiton", "UserSelfDesk.Applcaiton\Applcaiton.csproj", "{945F1241-6B9C-443E-B910-BCD390802FA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "UserSelfDesk.Domain\Domain.csproj", "{53003764-2E2A-4247-A02A-519D5D5989C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreCommon", "UserSelfDesk.CoreCommon\CoreCommon.csproj", "{752925B2-784F-4EA4-BEF5-9F3817E3B4C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserSelfDesk.Data", "UserSelfDesk.Data\UserSelfDesk.Data.csproj", "{B4C33445-C902-455A-BFA8-9173E0C83CF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CB1D477-3CA3-40BC-82F7-99B38357EFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB1D477-3CA3-40BC-82F7-99B38357EFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB1D477-3CA3-40BC-82F7-99B38357EFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB1D477-3CA3-40BC-82F7-99B38357EFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945F1241-6B9C-443E-B910-BCD390802FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945F1241-6B9C-443E-B910-BCD390802FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945F1241-6B9C-443E-B910-BCD390802FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945F1241-6B9C-443E-B910-BCD390802FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53003764-2E2A-4247-A02A-519D5D5989C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53003764-2E2A-4247-A02A-519D5D5989C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53003764-2E2A-4247-A02A-519D5D5989C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53003764-2E2A-4247-A02A-519D5D5989C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752925B2-784F-4EA4-BEF5-9F3817E3B4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752925B2-784F-4EA4-BEF5-9F3817E3B4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752925B2-784F-4EA4-BEF5-9F3817E3B4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752925B2-784F-4EA4-BEF5-9F3817E3B4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C33445-C902-455A-BFA8-9173E0C83CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C33445-C902-455A-BFA8-9173E0C83CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C33445-C902-455A-BFA8-9173E0C83CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C33445-C902-455A-BFA8-9173E0C83CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACFA04F9-775D-4BFB-BF13-637EED406A8F} = {E1F5DD55-E8FA-47F9-AA4B-6509EA2E2161}
+		{7FA472F4-D08C-42E9-85AB-225C41B2D07F} = {E1F5DD55-E8FA-47F9-AA4B-6509EA2E2161}
+		{7049DEE0-96F2-4ECF-8061-97737FDD1593} = {E1F5DD55-E8FA-47F9-AA4B-6509EA2E2161}
+		{1CB1D477-3CA3-40BC-82F7-99B38357EFBD} = {ACFA04F9-775D-4BFB-BF13-637EED406A8F}
+		{945F1241-6B9C-443E-B910-BCD390802FA3} = {7FA472F4-D08C-42E9-85AB-225C41B2D07F}
+		{53003764-2E2A-4247-A02A-519D5D5989C8} = {7FA472F4-D08C-42E9-85AB-225C41B2D07F}
+		{752925B2-784F-4EA4-BEF5-9F3817E3B4C8} = {7FA472F4-D08C-42E9-85AB-225C41B2D07F}
+		{B4C33445-C902-455A-BFA8-9173E0C83CF5} = {7049DEE0-96F2-4ECF-8061-97737FDD1593}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D79572D-230A-49A7-A680-EC46361668CE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sanjetechsi.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppWeb\\AppWeb.csproj
+		SccProjectTopLevelParentUniqueName1 = UserSelfDesk.sln
+		SccProjectName1 = AppWeb
+		SccLocalPath1 = AppWeb
+		SccProjectUniqueName2 = UserSelfDesk.Applcaiton\\Applcaiton.csproj
+		SccProjectTopLevelParentUniqueName2 = UserSelfDesk.sln
+		SccProjectName2 = UserSelfDesk.Applcaiton
+		SccLocalPath2 = UserSelfDesk.Applcaiton
+		SccProjectUniqueName3 = UserSelfDesk.CoreCommon\\CoreCommon.csproj
+		SccProjectTopLevelParentUniqueName3 = UserSelfDesk.sln
+		SccProjectName3 = UserSelfDesk.CoreCommon
+		SccLocalPath3 = UserSelfDesk.CoreCommon
+		SccProjectUniqueName4 = UserSelfDesk.Data\\UserSelfDesk.Data.csproj
+		SccProjectTopLevelParentUniqueName4 = UserSelfDesk.sln
+		SccProjectName4 = UserSelfDesk.Data
+		SccLocalPath4 = UserSelfDesk.Data
+		SccProjectUniqueName5 = UserSelfDesk.Domain\\Domain.csproj
+		SccProjectTopLevelParentUniqueName5 = UserSelfDesk.sln
+		SccProjectName5 = UserSelfDesk.Domain
+		SccLocalPath5 = UserSelfDesk.Domain
+	EndGlobalSection
+EndGlobal
